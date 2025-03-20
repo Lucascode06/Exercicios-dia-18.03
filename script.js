@@ -1,24 +1,20 @@
-console.log ("Campeao Gaucho")
+console.log("Campeão Gaucho");
 
-
-// 1. Verificação de Par ou Ímpar:
-
-function verificarpar (numero){
-    if (numero % 2 === 0 ){
-        console.log ("Par");
-    } else{
+// 1. Verificação de Par ou impar:
+function verificarPar(numero) {
+    if (numero % 2 === 0) {
+        console.log("Par");
+    } else {
         console.log("impar");
     }
-} 
+}
 
-
-//2. Operações Matemáticas Simples:
-
-function calcular (num1, num2) {
+// 2. Operações Matemáticas Simples:
+function calcular(num1, num2) {
     const soma = num1 + num2;
     const subtracao = num1 - num2;
     const multiplicacao = num1 * num2;
-    const divisao = num1 / num2 ;
+    const divisao = num1 / num2;
 
     return {
         soma: soma,
@@ -28,61 +24,52 @@ function calcular (num1, num2) {
     };
 }
 
-
 const resultado = calcular(10, 5);
-console.log(resultado)
+console.log(resultado);
 
-//3. Laço While para Contagem Regressiva:
-
-while (contado>= 1) {
-    console.log(contado);
-    contado--;  
+// 3. Laço While para Contagem Regressiva:
+function contagemRegressiva(inicio) {
+    while (inicio >= 0) {
+        console.log(inicio);
+        inicio--;
+    }
 }
+contagemRegressiva(5); 
 
-//4. Manipulação de Strings:
-
-function inverterTexto(texto) {
+// 4. Manipulação de Strings:
+function inverter(texto) {
     let caracteres = texto.split('');
-    let caracterinvertidos = caracteres.reverse();
-    let textoInver = caracterinvertidos.join('');
-     return textoInver;
+    let caracteresInvertidos = caracteres.reverse();
+    let textoInvertido = caracteresInvertidos.join('');
+    return textoInvertido;
 }
 
-let text = prompt("Digite uma palavra:");
+let usuario = prompt("Digite uma palavra:");
+let resultadoInversao = inverter(usuario);
+console.log("" + resultadoInversao);
 
-let resulta = inverterTexto(textoUsuario);
-console.log("" + resulta);
-
-// 5.Contagem de Caracteres em uma String:
-
+// 5. Contagem de Caracteres em uma String:
 function contarCaracteres(texto) {
     return texto.length;
 }
 
-let texto = prompt("Digite uma palavra ou frase:");
+let textoParaContar = prompt("Digite uma palavra ou frase:");
+let resultadoContagem = contarCaracteres(textoParaContar);
+console.log("" + resultadoContagem);
 
-let resultad = contarCaracteres(textoUsuario);
-console.log("" + resultad);
-
-
-
-//6. Acessando Propriedades de Objetos:
-
+// 6. Acessando Propriedades de Objetos:
 let carro = {
-    marca: 'lamborghini',
-    modelo: 'huracan ',
-    ano: 2024 
+    marca: 'Lamborghini',
+    modelo: 'Huracan',
+    ano: 2024
 };
 
 console.log(carro.modelo); 
 
-//8. Calculadora de Média:
-
-function media(nu1, nm2, nm3) {
+// 7. Calculadora de Média:
+function media(nm1, nm2, nm3) {
     return (nm1 + nm2 + nm3) / 3;
 }
 
-
-const resul = media(10, 20, 30);
-console.log(resul); 
-
+const resultadoMedia = media(10, 20, 30);
+console.log(resultadoMedia);
