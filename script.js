@@ -82,8 +82,44 @@ let mensagemUsuario = prompt("Digite uma mensagem");
 mensagemPersonalizada(nomeUsuario, mensagemUsuario);
 
 // 8. Calculadora de Média:
-function media(nm1, nm2, nm3) {
-    return (nm1 + nm2 + nm3) / 3;
+
+let n1 = prompt ("Digite um numero")*1;
+let n2 = prompt("Digite um numero")*1;
+let n3 = prompt("Digite um numero")*1;
+function media(n1, n2, n3){
+    console.log ((n1 + n2 + n3)/3)
+};
+media(n1, n2, n3);
+
+// 9. Laço for com Condição:
+
+
+//Nao consigo 
+
+//10. Verificação de Palavra Palíndroma:
+
+function verificarPalindromo(palavra) {
+  
+    const palavraLimpa = palavra.replace(/\s+/g, '').toLowerCase();
+    
+
+    const palavraInvertida = palavraLimpa.split('').reverse().join('');
+    
+    
+    return palavraLimpa === palavraInvertida;
 }
+
+
+let palavrUsuario = prompt("Digite uma palavra:");
+
+let resu = verificarPalindromo(palavrUsuario);
+
+
+if (resu) {
+    console.log(palavrUsuario + " é um palíndromo.");
+} else {
+    console.log(palavrUsuario + " não é um palíndromo.");
+}
+
 
 
