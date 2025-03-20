@@ -69,19 +69,17 @@ console.log(carro.modelo);
 //7. Função com Parâmetros Opcionais:
 
 function mensagemPersonalizada(nome, mensagem = "Olá!") {
-    console.log(mensagem + " " + nome + "!");
+    console.log(mensagem + " " + nome + "");
 }
 
 
 let nomeUsuario = prompt("Digite seu nome:");
 
 
-let mensagemUsuario = prompt("Digite uma mensagem'):");
+let mensagemUsuario = prompt("Digite uma mensagem");
 
 
 mensagemPersonalizada(nomeUsuario, mensagemUsuario);
-
-
 
 // 8. Calculadora de Média:
 function media(nm1, nm2, nm3) {
