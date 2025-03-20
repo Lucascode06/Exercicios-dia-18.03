@@ -1,6 +1,7 @@
 console.log ("Campeao Gaucho")
 
 
+// 1. Verificação de Par ou Ímpar:
 
 function verificarpar (numero){
     if (numero % 2 === 0 ){
@@ -11,7 +12,7 @@ function verificarpar (numero){
 } 
 
 
-
+//2. Operações Matemáticas Simples:
 
 function calcular (num1, num2) {
     const soma = num1 + num2;
@@ -33,17 +34,17 @@ console.log(resultado)
 
 
 
-function inverterTexto(texto) {
-    if (typeof texto !== 'string') {
-    }
-  
-    return texto.split('').reverse().join('');
-  }
-
-  let contador = 10;
-
-
 while (contador >= 1) {
     console.log(contador);
     contador--;  
 }
+
+//6. Acessando Propriedades de Objetos:
+
+let carro = {
+    marca: 'lamborghini',
+    modelo: 'huracan ',
+    ano: 2024 
+};
+
+console.log(carro.modelo); 
