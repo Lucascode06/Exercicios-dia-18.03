@@ -88,5 +88,4 @@ function media(nm1, nm2, nm3) {
     return (nm1 + nm2 + nm3) / 3;
 }
 
-const resultadoMedia = media(10, 20, 30);
-console.log(resultadoMedia);
+
