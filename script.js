@@ -43,23 +43,15 @@ while (contado>= 1) {
 
 function inverterTexto(texto) {
     let caracteres = texto.split('');
-    
-    let caracteresInvertidos = caracteres.reverse();
-    
-    let textoInvertido = caracteresInvertidos.join('');
-    
-
-    return textoInvertido;
+    let caracterinvertidos = caracteres.reverse();
+    let textoInver = caracterinvertidos.join('');
+     return textoInver;
 }
-
 
 let text = prompt("Digite uma palavra:");
 
 let resulta = inverterTexto(textoUsuario);
 console.log("" + resulta);
-
-
-
 
 // 5.Contagem de Caracteres em uma String:
 
