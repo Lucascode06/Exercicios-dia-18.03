@@ -53,8 +53,8 @@ function contarCaracteres(texto) {
     return texto.length;
 }
 
-let textoParaContar = prompt("Digite uma palavra ou frase:");
-let resultadoContagem = contarCaracteres(textoParaContar);
+let Contar = prompt("Digite uma palavra:");
+let resultadoContagem = contarCaracteres(Contar);
 console.log("" + resultadoContagem);
 
 // 6. Acessando Propriedades de Objetos:
